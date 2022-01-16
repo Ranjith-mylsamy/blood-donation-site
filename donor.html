@@ -10,7 +10,7 @@
     </head>
 <body>
     <header>
-        <a href="./index.html">
+        <a href="./index.html" class="logo">
              UTHIRAM
             <img src="img/hand logo.svg" alt="hand logo"></img>
         </a>
@@ -47,14 +47,14 @@
                 <label for="blood-group">Blood Group:</label><br>
                 <select id="blood-group" name="donorbloodgroup">
                     <option value="A+">A+</option>
-                    <option value="A-">A-</option>
                     <option value="B+">B+</option>
-                    <option value="B-">B-</option>
                     <option value="O+">O+</option>
-                    <option value="O-">O-</option>
                     <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
                 </select>
+                <div class="form--blood-type" value="positive">
+                    <div class="form--button-positive no-margin">+</div>
+                    <div class="form--button-negative no-margin">-</div>
+                </div>
             </div>
             <div>
                 <label for="donor-contact-number">Contact No:</label><br>
