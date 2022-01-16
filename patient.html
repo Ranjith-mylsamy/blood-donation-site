@@ -29,9 +29,9 @@
                 <label for="Attender-Name">Attender Name:</label><br>
                 <input type="text" id="Attender-Name" class="box">
             </div>
-            <div>
-                <label for="attender-blood-group">Blood Group:</label><br>
-                <select id="attender-blood-group" name="donorbloodgroup">
+            <label for="attender-blood-group">Blood Group:</label><br>
+            <div class="attender-blood-grp-flex">
+                <select id="attender-blood-group" name="donorbloodgroup" class="box">
                     <option value="A+">A+</option>
                     <option value="B+">B+</option>
                     <option value="O+">O+</option>
@@ -81,7 +81,7 @@
                 <label for="Time">Time:</label><br>
                 <input type="time" id="Time" class="box">
             </div>
-        <input type="Submit" value="Submit" class="btn">
+        <button type="submit" class="btn">Submit</button>
         </form>
         </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>

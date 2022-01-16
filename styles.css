@@ -46,13 +46,13 @@ html::-webkit-scrollbar-thumb{
     border-radius:5rem;
     overflow: hidden;
     z-index:0;
-    box-shadow:0 0.4rem 0.7rem rgb(255,246,246);
+    box-shadow:0 0.4rem 0.7rem rgb(200,200,200);
 }
 .btn::before{
     content:'';
-    transform:rotate(25deg);
+    transform:rotate(20deg);
     position:absolute;
-    background:#fff;
+    background:rgb(235, 236, 240);
     height:150%;
     width:20%;
     top:-1rem;
@@ -60,7 +60,7 @@ html::-webkit-scrollbar-thumb{
 }
 .btn:hover::before{
     left:120%;
-    transition: 0.5s linear;
+    transition: .5s linear;
 }
 .heading{
     color:#444;
@@ -152,7 +152,7 @@ label{
 .login-form form .box:focus{
     border: 1px solid;
     border-radius:40px;
-    border-color:rgba(48, 1, 255, 0.822);
+    box-shadow: 0 0 0 4px rgba(209, 14, 14, 0.4);
 }
 .login-form form .btn{
     width:90%;
@@ -161,7 +161,7 @@ label{
 .login-form form .btn:hover{
     color:black;
     background:var(--red);
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
 }
 .login-form form p{
     align-items: center;
@@ -198,7 +198,8 @@ label{
 .signup-form form .box:focus{
     border: 1px solid;
     border-radius:40px;
-    border-color:rgba(48, 1, 255, 0.822);
+    outline:none;
+    box-shadow: 0 0 0 4px rgba(209, 14, 14, 0.4);
 }
 .signup-form form .btn{
     width:50%;
@@ -207,7 +208,7 @@ label{
 .signup-form form .btn:hover{
     color:black;
     background:var(--red);
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
 }
 /* donor page commenses */
 .donor-reg-page{
@@ -237,7 +238,7 @@ label{
 .donor-reg-page form .box:focus{
     border: 1px solid;
     border-radius:40px;
-    border-color:rgba(48, 1, 255, 0.822);
+    box-shadow: 0 0 0 4px rgba(209, 14, 14, 0.4);
 }
 .donor-reg-page form .btn{
     width:50%;
@@ -246,7 +247,18 @@ label{
 .donor-reg-page form .btn:hover{
     color:black;
     background:var(--red);
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
+}
+.donor-req-page form .donor-type-flex .box{
+    width:100%;
+}
+.donor-reg-page form .donor-blood-group{
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+.donor-reg-page form .donor-blood-group .box{
+    width:50%;
 }
 .donor-reg-page form .d-contact-num .box{
     width:160%;
@@ -317,11 +329,12 @@ label{
 .patient-req-page form .box{
     margin-left:-1rem;
     width:150%;
+    outline:none;
 }
 .patient-req-page form .box:focus{
     border: 1px solid;
     border-radius:40px;
-    border-color:rgba(48, 1, 255, 0.822);
+    box-shadow: 0 0 0 4px rgba(209, 14, 14, 0.4);
 }
 .patient-req-page form .btn{
     width:50%;
@@ -330,11 +343,15 @@ label{
 .patient-req-page form .btn:hover{
     color:black;
     background:var(--red);
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
 }
-.patient-req-page form .d-contact-num .box{
-    width:160%;
-    margin-left:-1rem;
+.patient-req-page form .attender-blood-grp-flex{
+    display:flex;
+    width:150%;
+    align-items: center;
+}
+.patient-req-page form .attender-blood-grp-flex .box{
+    width:150%;
 }
 .patient-req-page form .form--blood-type {
     margin-left: 2rem;
@@ -342,10 +359,38 @@ label{
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
-
+/* index page commenses */
+.Scroll-text {
+    margin-top:4rem;
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+   }
+   .Scroll-text h1 {
+    font-size: 3em;
+    color: limegreen;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: Scroll-text 15s linear infinite;
+    -webkit-animation: Scroll-text 15s linear infinite;
+    animation: Scroll-text 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-webkit-keyframes Scroll-text {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
 
 
 
