@@ -55,7 +55,6 @@ html::-webkit-scrollbar-thumb{
     background:#fff;
     height:150%;
     width:20%;
-    z-index:-1;
     top:-1rem;
     left:-100%;
 }
@@ -233,6 +232,7 @@ label{
 .donor-reg-page form .box{
     margin-left:-1rem;
     width:80%;
+    outline:none;
 }
 .donor-reg-page form .box:focus{
     border: 1px solid;

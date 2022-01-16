@@ -1,10 +1,11 @@
 const phoneInputField = document.querySelector("#donor-contact-number");
 // const phoneInputField = document.querySelector("#donor-Whatsapp-No");
-const phoneInput = window.intlTelInput(phoneInputField, {});
+// const phoneInput = window.intlTelInput(phoneInputField, {});
+
 const formBloodType = document.querySelector(".form--blood-type");
 const formPveBtn = document.querySelector(".form--button-positive");
 const formNveBtn = document.querySelector(".form--button-negative");
-
+console.log(formPveBtn,formNveBtn)
 
 formNveBtn.addEventListener("click", ()=> {
     formBloodType.setAttribute("value","negative");
