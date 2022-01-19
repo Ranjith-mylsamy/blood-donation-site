@@ -494,7 +494,11 @@ label{
 .status .height{
     height:20px;
 }
-
+.status .box:focus{
+    border: 1px solid;
+    border-radius:40px;
+    box-shadow: 0 0 0 4px rgba(209, 14, 14, 0.4);
+}
 
 
 @media(max-width:768px){
